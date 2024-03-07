@@ -794,6 +794,7 @@ class User(Base, Dictifiable, RepresentById):
         self.username = username
 
     def get_user_data_tables(self, data_table: str):
+        return []
         session = object_session(self)
         assert session
         metadata_select = (
